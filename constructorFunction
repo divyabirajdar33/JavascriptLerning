@@ -1,0 +1,25 @@
+console.log(`1) `);
+function Bank(bankName, location, ifscCode, branchCode) {
+  this.bankName = bankName;
+  this.location = location;
+  this.ifscCode = ifscCode;
+  this.branchCode = branchCode;
+}
+let Bank1 = new Bank("YES bank", "Hadpsar", "HDFC000012", "1025");
+let Bank2 = new Bank("SBI bank", "uruli", "SBI0000465", "1345");
+let Bank3 = new Bank("Bank of Maharashtra", "Loni", "AX00000876", "1364");
+let Bank4 = new Bank("Axisbank", "Pune", "ICIC000046", "1198");
+console.log(Bank1);
+console.log(Bank2);
+console.log(Bank3);
+console.log(Bank4);
+
+Bank.prototype.openTime = `The open time of SBIBank is "9 AM  IST" And close Time is "6 PM IST"`;
+Bank.prototype.closeTime = `The open time of AxisBank is "9 AM  IST" And close Time is "6 PM IST"`;
+Bank.prototype.Time = `Bank Name is "YESBank is branch code is "1025" open time of YESBank is "9 AM  IST"`;
+console.log(`2)`);
+console.log(Bank2.openTime);
+console.log(`3)`);
+console.log(Bank4.closeTime);
+console.log(`4)`);
+console.log(Bank1.Time);
