@@ -45,7 +45,7 @@ const employee_info = {
 };
 console.log(`4) John Doe Address is : ${employee_info.address.locality.colony}, ${employee_info.address.locality.street}, ${employee_info.address.city} , ${employee_info.address.state} , ${employee_info.address.country}`);
 console.log(
-  ` John Doe SMobile Numbers are : ${employee_info.mobiles[0]}, ${employee_info.mobiles[1]}, ${employee_info.mobiles[2]} `
+  ` John Doe Mobile Numbers are : ${employee_info.mobiles[0]}, ${employee_info.mobiles[1]}, ${employee_info.mobiles[2]} `
 );
 
 console.log(
