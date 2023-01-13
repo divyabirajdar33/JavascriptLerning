@@ -39,13 +39,13 @@ class Employee {
     return emp1.emp_dept> emp2.emp_dept ? 1 : -1;
      });
      arrayOfEmployee.forEach((currentValue)=>{
-        console.log(`${currentValue.emp_id} Name: ${currentValue.emp_name}, Department: ${currentValue.emp_dept}`);
+        console.log(`${currentValue.emp_id}, Department: ${currentValue.emp_dept}, company: ${currentValue.emp_company}`);
      });
   console.log(`*********************************************************************************************************************`);
   console.log(`3) sort the array in decending order of employee salary `);
   arrayOfEmployee.sort((emp1,emp2)=>{
-    return emp1.emp_dept> emp2.emp_dept? 1 : -1;
+    return emp1.emp_dept> emp2.emp_dept? -1 : 1;
      });
      arrayOfEmployee.forEach((currentValue)=>{
-      console.log(`${currentValue.emp_id} Name: ${currentValue.emp_name}, Department: ${currentValue.emp_dept}`);
+      console.log(`${currentValue.emp_id} Name: ${currentValue.emp_name}, salary: ${currentValue.emp_salary}, company: ${currentValue.emp_company}`);
      });
