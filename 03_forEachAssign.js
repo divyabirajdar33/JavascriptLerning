@@ -22,11 +22,10 @@ mapOfEmployee.set(66, emp_sonali);
 mapOfEmployee.set(77, emp_monika);
 mapOfEmployee.set(88, emp_vinny);
 mapOfEmployee.set(99, emp_mahi);
-mapOfEmployee.forEach((EmployeeObject, emp_id) => {});
-const keyOfMapEmployee = mapOfEmployee.keys();
 
 console.log(`Create Map and Traverse using forEach loop`);
-console.log(`\n`);
+mapOfEmployee.forEach((EmployeeObject, emp_id) => {});
+const keyOfMapEmployee = mapOfEmployee.keys();
 for (const key of keyOfMapEmployee) {
   const Employee = mapOfEmployee.get(key);
   console.log(
